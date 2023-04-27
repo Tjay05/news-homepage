@@ -34,8 +34,47 @@
 /* Base Styles */
 body {
     font-family: 'Inter', sans-serif;
+    background: var(--off-white);
 }
+
+p {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: var(--very-dark-blue);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
 
 /* Utility Styles */
 
 /* Mobile Styles */
+/* Main Styles */
+img.puzzle-image {
+    width: 100%;
+}
+
+h1 {
+    margin-block: 1rem;
+    color: var(--very-dark-blue);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+/* About Styles */
+.about p {
+    margin-block: 1rem;
+}
+.about a {
+    margin-block: 1rem;
+    letter-spacing: 0.25rem;
+    color: var(--off-white);
+    text-transform: uppercase;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--soft-red);
+}
+
+/* Aside Styles */
