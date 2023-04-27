@@ -69,7 +69,7 @@ h1 {
     margin-block: 1rem;
 }
 .about a {
-    margin-block: 1rem;
+    margin-block-start: 1rem;
     letter-spacing: 0.25rem;
     color: var(--off-white);
     text-transform: uppercase;
@@ -79,6 +79,7 @@ h1 {
 
 /* Aside Styles */
 aside {
+    margin-block: 3rem;
     background-color: var(--very-dark-blue);
     padding: 1.5rem 1rem;
 }
@@ -88,4 +89,30 @@ aside h2 {
     font-weight: 700;
     font-size: 2rem;
     margin-block-end: 1rem;
+}
+
+/* Aside-Details */
+.aside-details .detail-content {
+    border-bottom: 0.5px solid hsl(233, 8%, 79%, 0.5);
+}
+
+.aside-details .detail-content:last-child{
+    border: none;
+}
+
+.aside-details .detail-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--off-white);
+}
+
+.aside-details .detail-content p {
+    margin-bottom: 2rem;
+    color: var(--gray-blue);
+}
+
+.aside-details .detail-content:last-child p {
+    margin-bottom: 0;
 }
