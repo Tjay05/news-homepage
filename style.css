@@ -79,7 +79,7 @@ h1 {
 
 /* Aside Styles */
 aside {
-    margin-block: 3rem;
+    margin-block: 4rem;
     background-color: var(--very-dark-blue);
     padding: 1.5rem 1rem;
 }
@@ -115,4 +115,26 @@ aside h2 {
 
 .aside-details .detail-content:last-child p {
     margin-bottom: 0;
+}
+
+/* Article Styles */
+article {
+    margin-block-end: 2rem;
+}
+
+.articles {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.articles img {
+    width: 33%;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-inline-start: 1rem;
 }
