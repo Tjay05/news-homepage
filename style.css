@@ -122,6 +122,10 @@ article {
     margin-block-end: 2rem;
 }
 
+article:last-child {
+    margin-block-end: 7rem;
+}
+
 .articles {
     display: flex;
     align-items: center;
@@ -153,4 +157,17 @@ article {
 .article-content p {
     color: var(--dark-gray-blue);
     margin-bottom: 0;
+}
+
+/* Footer Styles */
+address {
+    margin-bottom: 0;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
