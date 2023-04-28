@@ -124,7 +124,6 @@ article {
 
 .articles {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -135,6 +134,23 @@ article {
 .article-content {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin-inline-start: 1rem;
+}
+
+.article-content h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--gray-blue);
+}
+
+.article-content h3 {
+    color: var(--very-dark-blue);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.article-content p {
+    color: var(--dark-gray-blue);
+    margin-bottom: 0;
 }
