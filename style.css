@@ -33,6 +33,8 @@
 
 /* Base Styles */
 body {
+    width: 98vw;
+    height: 10vh;
     font-family: 'Inter', sans-serif;
     background: var(--off-white);
 }
@@ -173,10 +175,8 @@ address {
 }
 
 /* Tablet Styles */
-@media (min-width: 992px) {
-    .nav-link {
-        margin-inline-start: 1.5rem;
-    }
+@media (min-width: 860px) {
+    /* Main style */
     main {
         display: grid;
         gap: 1.6rem;
@@ -196,41 +196,47 @@ address {
 
     h1 {
         grid-area: head;
-        font-size: 3.8rem;
         margin-block: 0;
         align-self: start;
     }
 
+    /* About Style */
     .about {
         grid-area: info;
-        /* align-self: center; */
     }
 
     .about p {
         margin-block: 0;
-        font-size: 1.2rem;
         margin-block-end: 1rem;
+        font-size: 0.8rem;
     }
 
+    /* Aside styles */
     aside {
         grid-area: aside;
         margin-block: 0;
     }
 
-    aside h2 {
-        font-size: 3rem;
-    }
-
     aside .aside-details .detail-content h3 {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
     }
 
     aside p {
-        font-size: 1.2rem !important;
+        font-size: 0.85rem;
     }
 
+    /* Article Style */
     .articles img {
-        width: 30%;
+        width: 40%;
+        height: 130px;
+    }
+
+    .article-content h3 {
+        font-size: 0.95rem;
+    }
+
+    .article-content p {
+        font-size: 0.74rem;
     }
 
     article:last-child {
@@ -247,5 +253,50 @@ address {
 
     .article-three {
         grid-area: article-3;
+    }
+
+    /* Pseudo-Classes */
+    .about a:hover {
+        background-color: var(--very-dark-blue);
+    }
+
+    a.nav-link:hover, .article-content h3:hover {
+        cursor: pointer;
+        color: var(--soft-red);
+    }
+
+    .detail-content h3:hover {
+        cursor: pointer;
+        color: var(--soft-orange);
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    /* Nav-link style */
+    .nav-link {
+        color: var(--dark-gray-blue);
+        margin-inline-start: 1.5rem;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    aside h2 {
+        font-size: 3rem;
+    }
+
+    aside .aside-details .detail-content h3 {
+        font-size: 1.6rem;
+    }
+
+    aside p {
+        font-size: 1.2rem;
     }
 }
