@@ -19,39 +19,32 @@
 </head>
 <body>
   <header>
-    <nav class="">
-      <div class="">
-        <a class="" href="#"><img src="./assets/images/logo.svg" alt=""></a>
-        <button>
-          <img src="./assets/images/icon-menu.svg" alt="">
-        </button>
-        <div>
-          <div class="">
-            <button>
-              <img src="./assets/images/icon-menu-close.svg" alt="">
-            </button>
+    <nav class="navbar container">
+      <img src="./assets/images/logo.svg" alt="Logo">
+      <div id="offside-canvas" class="hidden">
+        <ul id="menu" class="offside-menu">
+          <div class="container">
+            <li class="">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">New</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Popular</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
           </div>
-          <div class="">
-            <ul class="">
-              <li class="">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="">
-                <a class="nav-link" href="#">New</a>
-              </li>
-              <li class="">
-                <a class="nav-link" href="#">Popular</a>
-              </li>
-              <li class="">
-                <a class="nav-link" href="#">Trending</a>
-              </li>
-              <li class="">
-                <a class="nav-link" href="#">Categories</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        </ul>
       </div>
+      <button>
+        <img id="hamburger" src="./assets/images/icon-menu.svg" alt="hamburger">
+      </button>
     </nav>
   </header>
 
@@ -124,5 +117,7 @@
       Coded by <a href="https://github.com/Tjay05">Olatayo Tijesu</a>.
     </address>
   </footer>
+
+  <script defer src="index.js"></script>
 </body>
 </html>
