@@ -347,6 +347,22 @@ address {
 
 /* Desktop Styles */
 @media (min-width: 1024px) {
+  /* Navbar Styles */
+  button.hamburger {
+    display: none;
+  }
+
+  nav.navbar #offside-canvas.hidden {
+    display: inline-block;
+  }
+
+  #offside-canvas.hidden ul#menu.offside-menu .container {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    width: unset;
+  }
+
   /* Nav-link style */
   .nav-link {
     color: var(--dark-gray-blue);
