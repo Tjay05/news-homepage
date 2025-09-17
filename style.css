@@ -50,7 +50,7 @@ img {
 
 /* Utility Styles */
 .container {
-  width: 90%;
+  width: min(90%, 1200px);
   margin-inline: auto;
 }
 
@@ -121,10 +121,14 @@ h1 {
 /* About Styles */
 .about p {
   margin-block: 1rem;
+  color: var(--dark-gray-blue);
+  line-height: 1.5rem;
 }
+
 .about a {
   margin-block-start: 1rem;
   letter-spacing: 0.25rem;
+  font-weight: 700;
   color: var(--off-white);
   text-transform: uppercase;
   padding: 0.8rem 1.5rem;
@@ -158,13 +162,15 @@ aside h2 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--off-white);
 }
 
 .aside-details .detail-content p {
   margin-bottom: 2rem;
+  font-size: .95rem;
   color: var(--gray-blue);
+  line-height: 1.5rem;
 }
 
 .aside-details .detail-content:last-child p {
@@ -182,11 +188,10 @@ article:last-child {
 
 .articles {
   display: flex;
-  align-items: center;
 }
 
 .articles img {
-  width: 33%;
+  width: 30%;
 }
 
 .article-content {
@@ -204,21 +209,24 @@ article:last-child {
 
 .article-content h3 {
   color: var(--very-dark-blue);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 800;
 }
 
 .article-content p {
   color: var(--dark-gray-blue);
   margin-bottom: 0;
+  line-height: 1.5rem;
 }
 
 /* Footer Styles */
 address {
   margin-bottom: 0;
+  font-style: unset;
 }
 
 .attribution {
+  font-family: inherit;
   font-size: 11px;
   text-align: center;
 }
