@@ -240,7 +240,7 @@ address {
   /* Main style */
   main {
     display: grid;
-    gap: 1.6rem;
+    gap: 2rem;
     margin-block: 1rem 2rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 0.5fr 0.5fr;
@@ -250,8 +250,11 @@ address {
       "article-1 article-2 article-3";
   }
 
-  img.puzzle-image {
+  picture {
     grid-area: image;
+  }
+  
+  img.puzzle-image {
     height: 100%;
   }
 
@@ -264,12 +267,21 @@ address {
   /* About Style */
   .about {
     grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
   }
 
   .about p {
     margin-block: 0;
     margin-block-end: 1rem;
     font-size: 0.8rem;
+  }
+
+  .about a {
+    margin-block: 0;
+    padding: 1rem 2rem;
   }
 
   /* Aside styles */
@@ -297,7 +309,7 @@ address {
   }
 
   .article-content p {
-    font-size: 0.74rem;
+    font-size: 1.07rem;
   }
 
   article:last-child {
@@ -343,11 +355,17 @@ address {
   }
 
   h1 {
-    font-size: 3.8rem;
+    font-size: 3.7rem;
+    line-height: 3.8rem;
   }
 
   .about p {
-    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-size: 1.05rem;
+  }
+
+  aside {
+    padding-inline: 1.5rem;
   }
 
   aside h2 {
@@ -355,10 +373,11 @@ address {
   }
 
   aside .aside-details .detail-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
-  aside p {
-    font-size: 1.2rem;
+  .aside-details .detail-content p {
+    font-size: 1.05rem;
+    line-height: 2rem;
   }
 }
